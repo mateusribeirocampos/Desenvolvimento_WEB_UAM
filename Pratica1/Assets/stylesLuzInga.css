@@ -29,7 +29,7 @@ a:hover{
     color: #690606;
 }
 header{
-    background-image: url(/Desenvolvimento_WEB_UAM/Pratica1/images/image1.jpg);
+    background-image: url("/Pratica1/images/image1.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -99,31 +99,18 @@ h3{
     font-weight: bold;
     margin: 20px 100px;
 }
-.formulario-text{
-    font-size: 26px;
-    margin: 20px 100px;
-}
 form{
-  /* Apenas para centralizar o form na página */
+display: grid;
 margin: 0 auto;
 width: 80%;
-  /* Para ver as bordas do formulário */
 padding: 50px 100px;
 border: 1px solid #ccc;
 border-radius: 1em;
 }
-form.form-name{
-    display: table;
-    margin: 20px 100px;
-    padding: 50px;
-}
-div.form-name{
-    display: table-row;
-}
 label, input{
     display: table-cell;
-    margin-bottom: 10px;
-    padding: 20px 45px
+    margin-bottom: 20px;
+    padding: 10px;
 }
 input,
 textarea {
@@ -131,6 +118,7 @@ font: 1em sans-serif;
 width: 500px;
 box-sizing: border-box;
 border: 1px solid #999;
+padding: 10px;
 }
 label{
     padding: 10px 0;
@@ -141,6 +129,10 @@ button {
     border-radius: 1px solid #999;
     font-size: 16px;
     align-items: center;
+}
+button:hover{
+    background-color: #333;
+    color: #fff;
 }
 footer{
     background-color: #333;
