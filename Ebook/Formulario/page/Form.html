@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Ebook/Formulario/StylesForm.css">
+    <link rel="stylesheet" href="/Ebook/Formulario/Assets/StylesForm.css">
     <title>Formulário</title>
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="/Pratica1/page/luzinga.html">Empresa</a></li>
-                <li><a href="/Pratica1/page/luzinga.html">Projetos</a></li>
-                <li><a href="/Pratica1/page/luzinga.html">Guia solar</a></li>
+                <li><a href="/Ebook/Formulario/page/Form.html">Empresa</a></li>
+                <li><a href="/Ebook/Formulario/page/Form.html">Projetos</a></li>
+                <li><a href="/Ebook/Formulario/page/Form.html">Guia solar</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
@@ -40,7 +40,8 @@
 
         <div>
             <label for="telefone">Telefone</label>
-            <input type="tel" name="telefone" id="telefone" required>
+            <input type="tel" name="telefone" id="telefone">
+            <span id="telefoneError" style="display: none; color: red;">Por favor, insira um número de telefone válido.</span>
         </div>
 
         <div>
@@ -76,6 +77,8 @@
 <footer>
     <p>© 2024 Luz Ingá. <br>Todos os direitos reservados.</p>
 </footer>
+
+<script src="/Ebook/Formulario/components/validation.js"></script>
 
 </body>
 </html>

@@ -30,6 +30,7 @@ a{
 a:hover{
     color: #690606;
 }
+
 section{
     margin: 20px 150px;
     padding: 50px 0;
@@ -73,7 +74,7 @@ input, textarea{
     width: 100%;
     border-radius: 10px;
     border: 1px solid #7c88cf;
-    font: 24x sans-serif;
+    font: 24px sans-serif;
 }
 button{
     padding: 10px;
