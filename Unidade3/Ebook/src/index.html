@@ -9,7 +9,7 @@
 <body>
     <h1>Cadastro de Clientes</h1>
     <p>Inclua as informações do cliente abaixo</p>
-    <form id="form_cadastro" action="/Unidade3/Ebook/php/grava_cliente.php" method="post">
+    <form id="form_cadastro" id="form_cadastro" action="http://localhost:3536/Unidade3/Ebook/php/grava_cliente.php" method="post">
         <label for="nome">Nome do cliente:</label><br>
         <input type="text" id="nome" name="nome" required><br><br>
 
@@ -28,5 +28,32 @@
         <input type="submit" value="Cadastrar" onclick="Cadastro()">
     </form>
     <script src="/Unidade3/Ebook/js/formEbook.js"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Intercepta o envio do formulário
+            $('#form_cadastro').submit(function(event) {
+                // Previne o comportamento padrão do formulário (envio)
+                event.preventDefault();
+
+                // Obtém os dados do formulário
+                var formData = $(this).serialize();
+
+                // Faz a requisição AJAX
+                $.ajax({
+                    type: 'POST',
+                    url: '/Unidade3/Ebook/php/grava_cliente.php',
+                    data: formData,
+                    success: function(response) {
+                        alert('Cliente cadastrado com sucesso!');
+                        // Faça qualquer outra coisa que desejar após o cadastro bem-sucedido
+                    },
+                    error: function(xhr, status, error) {
+                        alert('Erro ao cadastrar cliente: ' + error);
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
