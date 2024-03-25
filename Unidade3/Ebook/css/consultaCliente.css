@@ -3,13 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
 h1, p{
     text-align: center;
     margin: 20px;
@@ -19,6 +12,13 @@ h1{
 }
 p{
     font-size: 1.2rem;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 input{
     display: flex;
@@ -42,12 +42,4 @@ label[for="sexo"]{
 .radio-buttons input[type="radio"] {
     display: inline-block;
     margin-right: 100px;
-}
-h2{
-    text-align: center;
-    margin: 20px;
-}
-a{
-    text-align: center;
-    text-decoration: none;
 }

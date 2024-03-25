@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/Desenvolvimento_WEB_UAM/Unidade3/Ebook/css/consultaCliente.css">
+        <title>Lojas Super</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+<body>
+    <h1>Consulta de Clientes</h1>
+    <p>Preencha o nome do cliente para efeturar a consulta</p>
+    <section>
+    <label for="nomeCliente">Nome do cliente</label><br>
+    <input type="text" id="nomeCliente" name="nomeCliente" required><br><br>
+    <input type="button" value="Consultar" id="btnConsultar" onclick="Consultar()"><br><br>
+    
+    <label for="endereco">Endereço do cliente:</label><br>
+    <input type="text" id="endereco" name="endereco" required><br><br>
+
+    <label for="idade">Idade do cliente:</label><br>
+    <input type="number" id="idade" name="idade" required><br><br>
+
+        <label for="sexo">Sexo do cliente:</label><br>
+        <div class="radio-buttons">
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="masculino" name="sexo" value="masculino" checked>
+            <br>
+            <label for="feminino">Feminino</label>
+            <input type="radio" id="feminino" name="sexo" value="feminino">
+            <br><br>
+        </div>
+    </section>
+    <script src="/Desenvolvimento_WEB_UAM/Unidade3/Ebook/src/consultaCliente/consultaclientej.js"></script>
+</body>
+</html>

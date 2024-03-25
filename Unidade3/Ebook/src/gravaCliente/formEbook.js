@@ -25,8 +25,8 @@ function Cadastro() {
         data: dadosajax,
         type: 'POST',
         cache: false,
-        error: function(XMLHttpRequest, textStatus, errorThrown) {
-            alert("Erro Gravação Cliente: " + errorThrown);
+        error: function(jqXHR, textStatus, errorThrown) {
+            console.log('Erro na requisição: ', textStatus, errorThrown);
         },
         success: function(result) {
             alert("Cliente Gravado com Sucesso!");

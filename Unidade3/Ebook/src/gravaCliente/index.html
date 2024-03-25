@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Desenvolvimento_WEB_UAM/Unidade3/Ebook/css/formEbook.css">
+    <title>Lojas Super</title>
+</head>
+<body>
+    <h1>Cadastro de Clientes</h1>
+    <p>Inclua as informações do cliente abaixo</p>
+    <form id="form_cadastro" id="form_cadastro" action="grava_cliente.php" method="post">
+        <label for="nome">Nome do cliente:</label><br>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="endereco">Endereço do cliente:</label><br>
+        <input type="text" id="endereco" name="endereco" required><br><br>
+
+        <label for="idade">Idade do cliente:</label><br>
+        <input type="number" id="idade" name="idade" required><br><br>
+
+            <label for="sexo">Sexo do cliente:</label><br>
+            <div class="radio-buttons">
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="masculino" name="sexo" value="masculino" checked>
+                <br>
+                <label for="feminino">Feminino</label>
+                <input type="radio" id="feminino" name="sexo" value="feminino">
+                <br><br>
+            </div>
+            
+        <input type="submit" value="Cadastrar" onclick="Cadastro()">
+    </form>
+    <div>
+       <h2><a href="">Pagina de clientes cadastrados</a></h2>
+    </div>
+    <script src="/Desenvolvimento_WEB_UAM/Unidade3/Ebook/src/gravaCliente/formEbook.js"> </script>
+</body>
+</html>

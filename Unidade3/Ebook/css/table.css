@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div{
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+}
+h1, p{
+    text-align: center;
+    margin: 20px;
+}
+h1{
+    font-size: 3rem;
+}
+p{
+    font-size: 1.2rem;
+}
+table {
+    margin: 20px auto; /* Centraliza a tabela horizontalmente e adiciona margem superior e inferior */
+    border-collapse: collapse;
+    width: 80%;
+    border: 1px solid #000;
+}
+
+tr, th, td {
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+th {
+    background-color: #f2f2f2; /* Adiciona uma cor de fundo aos cabeçalhos da tabela */
+    text-align: center; /* Centraliza o texto nos cabeçalhos */
+}
+
+td {
+    text-align: center; /* Centraliza o texto nas células da tabela */
+}
+
+input{
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
